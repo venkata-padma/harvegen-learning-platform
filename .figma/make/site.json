@@ -1,0 +1,10 @@
+{
+  "description": "Effortlessly extract content from any website and generate all corresponding pages, streamlining the process for developers and content creators.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
