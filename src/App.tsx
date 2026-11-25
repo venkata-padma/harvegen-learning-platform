@@ -152,7 +152,7 @@ function Footer() {
           {/* Brand */}
           <div className="footer-brand-col">
             <div className="footer-logo">
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="7" fill="#aadab6"/><path d="M7 14h5m4 0h5M14 7v5m0 4v5" stroke="white" strokeWidth="2.2" strokeLinecap="round"/><circle cx="14" cy="14" r="3" fill="white"/></svg>
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="7" fill="#2563eb"/><path d="M7 14h5m4 0h5M14 7v5m0 4v5" stroke="white" strokeWidth="2.2" strokeLinecap="round"/><circle cx="14" cy="14" r="3" fill="white"/></svg>
               <span>Harvegen</span>
             </div>
             <p className="footer-tagline">An open embedded systems learning platform — built by engineers, for engineers. From bare-metal C to real-time OS, we cover it all.</p>
