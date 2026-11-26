@@ -152,7 +152,7 @@ function Footer() {
           {/* Brand */}
           <div className="footer-brand-col">
             <div className="footer-logo">
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="7" fill="#2563eb"/><path d="M7 14h5m4 0h5M14 7v5m0 4v5" stroke="white" strokeWidth="2.2" strokeLinecap="round"/><circle cx="14" cy="14" r="3" fill="white"/></svg>
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="7" fill="#65D99E"/><path d="M7 14h5m4 0h5M14 7v5m0 4v5" stroke="white" strokeWidth="2.2" strokeLinecap="round"/><circle cx="14" cy="14" r="3" fill="white"/></svg>
               <span>Harvegen</span>
             </div>
             <p className="footer-tagline">An open embedded systems learning platform — built by engineers, for engineers. From bare-metal C to real-time OS, we cover it all.</p>
@@ -478,11 +478,11 @@ function Home() {
         <div className="home-wave home-wave-two" />
       </section>
       <HomeAbout />
-      <section className="section container">
+      <section className="section container home-projects">
         <SectionHead label="Applied Learning" title="Practice through real systems" description="Explore practical examples that connect embedded concepts to complete, observable system behavior." link="/projects" />
         <div className="card-grid">{projects.slice(0, 3).map((item) => <ProjectCard key={item.title} item={item} />)}</div>
       </section>
-      <section className="section soft">
+      <section className="section soft home-modules">
         <div className="container">
           <SectionHead label="Learning Path" title="Latest Modules" description="Step-by-step guides from register-level basics to production RTOS patterns." link="/tutorials" />
           <div className="module-grid">{modules.slice(0, 3).map((item) => <ModuleCard key={item.title} item={item} />)}</div>
@@ -558,7 +558,7 @@ function Platforms() {
     ["STM32", "Industry-standard ARM Cortex-M4 platform with rich peripherals, HAL libraries, and RTOS support.", "ARM · Cortex-M4"],
     ["Arduino", "Beginner-friendly ATmega ecosystem with massive library support. Ideal for rapid prototyping.", "ATmega · Beginner"],
   ];
-  return <section className="section container"><SectionHead label="Platforms" title="Microcontroller Platforms" description="Course topics organised around the hardware used in modern embedded development." /><div className="platform-grid">{data.map(([name, desc, meta]) => <article className="platform-card" key={name}><div className="platform-orb"><Icon name="chip" size={28} /></div><span>{meta}</span><div className="card-title">{name}</div><p>{desc}</p><Link href="/tutorials/text" className="text-link">Find related courses <Icon name="arrow" size={16} /></Link></article>)}</div></section>;
+  return <section className="section container home-platforms"><SectionHead label="Platforms" title="Microcontroller Platforms" description="Course topics organised around the hardware used in modern embedded development." /><div className="platform-grid">{data.map(([name, desc, meta]) => <article className="platform-card" key={name}><div className="platform-orb"><Icon name="chip" size={28} /></div><span>{meta}</span><div className="card-title">{name}</div><p>{desc}</p><Link href="/tutorials/text" className="text-link">Find related courses <Icon name="arrow" size={16} /></Link></article>)}</div></section>;
 }
 
 function CTA() {
